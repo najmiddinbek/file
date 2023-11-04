@@ -2,8 +2,6 @@
 
 import React, { useState, useEffect } from "react"
 const getTopics = async () => {
-    const apiUrl = process.env.API_URL;
-
     try {
         const res = await fetch(`/api/pupils`, {
             cache: 'no-store',

@@ -4,7 +4,6 @@
 import React, { useEffect, useState } from 'react';
 
 const getTopics = async () => {
-    const apiUrl = process.env.API_URL;
     const filterDate = new Date("2023-11-04T24:00:00").getTime();
     try {
         const res = await fetch(`/api/topics`, {
